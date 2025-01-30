@@ -1,0 +1,124 @@
+:root {
+  --text-margin: .8rem;
+}
+
+.text {
+
+  // paragraphs
+  p {
+    line-height: 1.6rem;
+    overflow-wrap: anywhere;
+
+    margin: var(--text-margin) 0;
+
+    &.subtle {
+      color: var(--subtext0);
+    }
+
+    // inline code
+    &>code {
+      background: var(--surface0);
+      color: var(--subtext0);
+      padding: .12rem .24rem;
+    }
+  }
+
+  // blockquotes
+  blockquote {
+    margin: var(--text-margin) 0;
+    padding-left: 1rem;
+
+    border-left: 4px solid var(--overlay0);
+    transition: border-color .2s;
+  }
+
+  --h-margin-b: .8rem;
+
+  // headers
+  h1 {
+    margin: 2.25rem 0 var(--h-margin-b);
+    font-size: 1.75rem
+  }
+
+  h2 {
+    margin: 1.9rem 0 var(--h-margin-b);
+    font-size: 1.4rem
+  }
+
+  h3 {
+    margin: 1.62rem 0 var(--h-margin-b);
+    font-size: 1.12rem
+  }
+
+  h4,
+  h5,
+  h6 {
+    margin: 1.5rem 0 var(--h-margin-b);
+    font-size: 1rem
+  }
+
+  // lists
+  ul {
+    list-style-position: inside;
+    list-style-type: '- ';
+
+    li {
+      padding-left: .5rem;
+    }
+  }
+}
+
+p.subtitle {
+  margin-top: 0;
+
+  .text :has(+ &) {
+    margin-bottom: 0;
+  }
+}
+
+.text pre:has(>code) {
+  --gutter-size: 2rem;
+  margin: .5rem 0;
+  padding: 1rem var(--gutter-size);
+  border: 2px solid var(--border, var(--default-border));
+
+  overflow: auto;
+
+  /* The line numbers already provide some kind of left/right padding */
+  &[data-linenos] {
+    padding: 1rem 0;
+  }
+
+  table td {
+    padding: 0;
+  }
+
+  /* The line number cells */
+  table td:nth-of-type(1) {
+    text-align: center;
+    user-select: none;
+
+    width: var(--gutter-size);
+  }
+
+  mark {
+    /* If you want your highlights to take the full width */
+    display: block;
+    /* The default background colour of a mark is bright yellow */
+    background-color: rgba(254, 252, 232, 0.9);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+}
+
+// spacing
+hr {
+  background-color: var(--surface1);
+  border: none;
+  width: 100%;
+  height: 1px;
+  margin: 2rem auto;
+}

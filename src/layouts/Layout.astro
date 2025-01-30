@@ -1,5 +1,6 @@
 ---
-import "../styles/global.css";
+import "../styles/tailwind.css";
+import "../styles/styles.scss";
 ---
 <!doctype html>
 <html lang="en">
@@ -11,6 +12,12 @@ import "../styles/global.css";
     <title>tgirl.cloud</title>
 	</head>
 	<body class="bg-black">
-		<slot />
+    <div id="root">
+      <div id="page">
+        <div class="main">
+          <slot />
+        </div>
+      </div>
+    </div>
 	</body>
 </html>
