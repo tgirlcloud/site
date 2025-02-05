@@ -1,0 +1,16 @@
+---
+import Link from '../link.astro'
+
+interface Props {
+	id: string;
+	name?: string;
+}
+
+const {id} = Astro.props;
+const name = Astro.props.name || id;
+const ref = `https://ko-fi.com/${id}`
+---
+
+<Link ref={ref} text={name}>
+	<img src="https://storage.ko-fi.com/cdn/logomarkLogo.png" height="16">
+</Link>

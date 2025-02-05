@@ -1,0 +1,17 @@
+a {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+  gap: .5rem;
+
+  .icon {
+    height: 1rem;
+    aspect-ratio: 1/1;
+
+    svg {
+      fill: var(--special);
+      stroke: var(--special);
+    }
+  }
+}

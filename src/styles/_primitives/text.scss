@@ -59,7 +59,8 @@
 
   // lists
   ul {
-    list-style-position: inside;
+    // FIXME: enabling this line breaks links in list items
+    // list-style-position: inside;
     list-style-type: '- ';
 
     li {
