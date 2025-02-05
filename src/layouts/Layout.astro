@@ -8,16 +8,15 @@ import "../styles/styles.scss";
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-    <title>tgirl.cloud</title>
+		<title>tgirl.cloud</title>
 	</head>
-	<body class="bg-black">
-    <div id="root">
-      <div id="page">
-        <div class="main">
-          <slot />
-        </div>
-      </div>
-    </div>
+	<body>
+		<div id="root">
+			<div id="page">
+				<div class="main">
+					<slot />
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
