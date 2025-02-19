@@ -1,10 +1,70 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Intro from '../components/intro.astro';
-import Donate from '../components/donate.astro';
+import Contributor from '../components/links/contributor.astro'
+import Github from '../components/links/github.astro';
+import Link from '../components/links/link.astro';
 ---
 
 <Layout>
-  <Intro />
-  <Donate />
+  <div slot="header" class="header">
+    <h1 class="brandname">tgirl.cloud</h1>
+    <p class="branddesc">
+      tgirlcloud is a collection of tools for nix configuration and development.
+    </p>
+  </div>
+
+  <h3>
+    resources:
+  </h3>
+  <ul>
+    <li><Github id="tgirlcloud"/></li>
+  </ul>
+
+  <h3>
+    projects:
+  </h3>
+  <ul>
+    <li><Github id="tgirlcloud/easy-hosts" /></li>
+    <li><Github id="tgirlcloud/beapkgs" /></li>
+    <li><Github id="tgirlcloud/nix-templates" /></li>
+  </ul>
+
+  <h3>
+    docs:
+  </h3>
+  <ul>
+    <li><Link text="beapkgs options" ref="https://beapkgs.tgirl.cloud"/></li>
+  </ul>
+
+  <!--<h3>contributors:</h3>-->
+  <!--<ul>-->
+  <!--  <li><Contributor name="isabelroses"/></li>-->
+  <!--  <li><Contributor name="comfysage"/></li>-->
+  <!--</ul>-->
 </Layout>
+
+<style>
+  .header {
+    grid-area: grid-header;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .brandname {
+    font-size: 4rem;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .branddesc {
+    font-size: 1.25rem;
+    font-weight: 400;
+    align-self: center;
+    justify-self: center;
+    width: fit-content;
+  }
+</style>

@@ -1,0 +1,27 @@
+---
+import Github from './links/github.astro';
+import Kofi from './links/kofi.astro';
+
+interface Props {
+  name: string;
+  github?: string;
+  kofi?: string;
+}
+
+const {name, kofi} = Astro.props;
+const github = Astro.props.github || name;
+---
+
+<div>
+  <Github id={github} />
+  {kofi && <Kofi id={kofi} />}
+</div>
+
+<style>
+  .contributor-name {
+    font-size: 4rem;
+    font-weight: 700;
+    align-self: center;
+    justify-self: center;
+  }
+</style>

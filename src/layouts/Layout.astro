@@ -12,7 +12,8 @@ import "../styles/styles.scss";
 	</head>
 	<body>
 		<div id="root">
-			<div id="page">
+      <div id="page">
+        <slot name="header" />
 				<div id="main" class="text">
 					<slot />
 				</div>
