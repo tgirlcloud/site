@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.0",
-    "@tailwindcss/vite": "^4.0.1",
-    "astro": "^5.2.1",
-    "sass": "^1.83.4",
-    "tailwindcss": "^4.0.1"
+    "@tailwindcss/vite": "^4.0.12",
+    "astro": "^5.4.2",
+    "sass": "^1.85.1",
+    "tailwindcss": "^4.0.12"
   },
   "devDependencies": {
     "tailwind-corner-smoothing": "^1.2.0"
