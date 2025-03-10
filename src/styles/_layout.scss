@@ -39,7 +39,6 @@ body {
   @include onmobile() {
     padding: 0 2rem;
     --top-margin: 0;
-    --header-size: var(--df-header-size);
   }
 }
 
