@@ -1,31 +1,30 @@
 // theme
 :root {
-  --rosewater: #E1A8DC;
-  --flamingo: #E1A8DC;
-  --pink: #E1A8DC;
-  --mauve: #BBA6DE;
-  --red: #E58888;
-  --maroon: #E58888;
-  --peach: #F0C48F;
-  --yellow: #E6DEA3;
-  --green: #BEDEB5;
-  --teal: #A8DECC;
-  --sky: #A0CFE2;
-  --sapphire: #A2B1DF;
-  --blue: #A2B1DF;
-  --lavender: #BBA6DE;
-  --text: #DEE9F4;
-  --subtext1: #B9CADD;
-  --subtext0: #A1B3C7;
-  --overlay2: #8A9DB1;
-  --overlay1: #69788C;
-  --overlay0: #586579;
-  --surface2: #434D60;
-  --surface1: #3A4254;
-  --surface0: #323748;
-  --base: #292D3C;
-  --mantle: #212330;
-  --crust: #181924;
+  --red: #F6598E;
+  --orange: #F09262;
+  --yellow: #EDE874;
+  --lime: #C2E774;
+  --green: #91E478;
+  --aqua: #83EDCF;
+  --skye: #86DCE9;
+  --snow: #83C4E6;
+  --blue: #7796DF;
+  --purple: #8B79E8;
+  --violet: #B37FED;
+  --pink: #F186ED;
+  --cherry: #CC6D91;
+  --text: #CED1F0;
+  --subtext1: #B6B8DE;
+  --subtext0: #999AC7;
+  --overlay2: #8787B2;
+  --overlay1: #6D6D93;
+  --overlay0: #545573;
+  --surface2: #3C3D53;
+  --surface1: #2A2C3B;
+  --surface0: #1E1F2A;
+  --base: #14161D;
+  --mantle: #0E0F15;
+  --crust: #090A0F;
 }
 
 // == components ==
@@ -33,7 +32,7 @@
 // defaults
 :root {
   --default-border: var(--surface1);
-  --special: var(--blue);
+  --special: var(--skye);
 }
 
 // functions
