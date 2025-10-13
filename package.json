@@ -9,14 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^4.3.7",
-    "@tailwindcss/vite": "^4.1.12",
     "astro": "^5.13.3",
     "reading-time-estimator": "^1.14.0",
-    "sass": "^1.91.0",
-    "tailwindcss": "^4.1.12"
-  },
-  "devDependencies": {
-    "tailwind-corner-smoothing": "^1.2.0"
+    "sass": "^1.91.0"
   }
 }

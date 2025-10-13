@@ -25,7 +25,7 @@ const customLoader: Loader = {
 
     const baseLoader = glob({
       base: "./src/content",
-      pattern: "**/*.mdx",
+      pattern: "**/*.md",
     });
     await baseLoader.load.call(this, loaderParams);
 
