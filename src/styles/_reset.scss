@@ -14,6 +14,10 @@ ol[role='list'] {
   list-style: none;
 }
 
+ol {
+  list-style: decimal;
+}
+
 html:focus-within {
   scroll-behavior: smooth;
 }

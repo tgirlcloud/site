@@ -141,3 +141,28 @@ body {
     display: initial;
   }
 }
+
+.header {
+  grid-area: grid-header;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.brandname {
+  font-size: 4rem;
+  font-weight: 700;
+  align-self: center;
+  justify-self: center;
+}
+
+.branddesc {
+  font-size: 1.25rem;
+  font-weight: 400;
+  align-self: center;
+  justify-self: center;
+  width: fit-content;
+}
+

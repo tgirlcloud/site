@@ -1,0 +1,28 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Link from '../../components/links/link.astro';
+
+import { type CollectionEntry, getCollection } from "astro:content";
+
+const posts = await getCollection("blog", ({ data }) => {
+  return !data.draft && !data.archived;
+});
+---
+
+<Layout>
+  <div slot="header" class="header">
+    <h1 class="brandname">posts</h1>
+    <p class="branddesc">
+      tgirlcloud is a collection of tools for nix configuration and development.
+    </p>
+  </div>
+
+  <ul>
+  {posts.map((post) => (
+    <li>
+      <Link ref={`/blog/${post.id}`} text={post.data.title} />
+    </li>
+    ))
+  }
+  </ul>
+</Layout>
