@@ -1,8 +1,10 @@
 {
   lib,
   pnpm,
-  nodejs-slim,
   stdenvNoCC,
+  nodejs-slim,
+  fetchPnpmDeps,
+  pnpmConfigHook,
 }:
 let
   packageJson = lib.importJSON ./package.json;
@@ -14,14 +16,15 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   src = ./.;
 
   nativeBuildInputs = [
-    pnpm.configHook
+    pnpmConfigHook
+    pnpm
     nodejs-slim
   ];
 
-  pnpmDeps = pnpm.fetchDeps {
+  pnpmDeps = fetchPnpmDeps {
     inherit (finalAttrs) pname version src;
-    fetcherVersion = 2;
-    hash = "sha256-mOanv2y4rRG5CGFUxq4LvLWjJ+/CnwIA5rnFZtZ2j2k=";
+    fetcherVersion = 3;
+    hash = "sha256-XVgm3StLGN8rGqhm3FgE4Z0DFjofxQzOIgtC9LxQC1c=";
   };
 
   buildPhase = ''

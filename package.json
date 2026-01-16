@@ -9,8 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.15.9",
-    "reading-time-estimator": "^1.14.0",
-    "sass": "^1.94.2"
+    "astro": "^5.16.10",
+    "reading-time-estimator": "^2.0.4",
+    "sass": "^1.97.2"
   }
 }
